@@ -1,0 +1,1 @@
+hook onto getdents to hide files from ls
