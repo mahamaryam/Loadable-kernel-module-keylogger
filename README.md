@@ -1,15 +1,23 @@
-## lkm keylogger 
+## LKM Keylogger
 
-using dns exfilteration to send keystrokes encoded in base64 in the dns query name using loadable kernel modules.
+This project uses DNS exfiltration to send keystrokes (encoded in Base64) within the DNS query name field, using Loadable Kernel Modules (LKMs).
 
+### How it works:
 
-random data typed on the terminal...
-1. ![Screenshot 1](./images/Screenshot%20from%202025-05-11%2015-27-09.png)
+- Random data typed on the terminal is captured.
+- The captured characters are Base64-encoded.
+- The encoded string is inserted into the DNS query name.
+- This DNS traffic can then be observed and decoded using tools like Wireshark.
 
+---
 
-typed letters encoded in base64 detected in the query name of a dns packet on wireshark
-2. ![Screenshot 2](./images/Screenshot%20from%202025-05-11%2015-23-02.png)
+### Screenshots
 
+1. **Random data typed on the terminal**  
+   ![Screenshot 1](./images/Screenshot%20from%202025-05-11%2015-27-09.png)
 
-decode 
-3. ![Screenshot 3](./images/Screenshot%20from%202025-05-11%2015-26-52.png)
+2. **Base64-encoded keystrokes detected in a DNS packet**  
+   ![Screenshot 2](./images/Screenshot%20from%202025-05-11%2015-23-02.png)
+
+3. **Decoded keystrokes from DNS query**  
+   ![Screenshot 3](./images/Screenshot%20from%202025-05-11%2015-26-52.png)
