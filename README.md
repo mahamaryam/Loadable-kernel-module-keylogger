@@ -1,6 +1,6 @@
 ## lkm keylogger 
 
-This project demonstrates DNS exfiltration to send keystrokes encoded in Base64 using DNS query names, utilizing Loadable Kernel Modules (LKMs).
+using dns exfilteration to send keystrokes encoded in base64 in the dns query name using loadable kernel modules.
 
 ## Screenshots
 
