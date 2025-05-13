@@ -4,7 +4,7 @@ This project uses DNS exfiltration to send keystrokes (encoded in Base64) within
 
 ### How it works:
 
-- Random data typed on the terminal is captured.
+- Random data typed is captured.
 - The captured characters are Base64-encoded.
 - The encoded string is inserted into the DNS query name.
 - This DNS traffic can then be observed and decoded using tools like Wireshark.
